@@ -103,3 +103,37 @@ overflow: hidden;
 ```html
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ```
+
+- Learned to deploy react app on githubpages
+  1. Referred to video youtube video for help [PedroTech's Vite + React hosting on GitHub](https://www.youtube.com/watch?v=hn1IkJk24ow)
+  - Configure vite.config.js to have base in defaultConfig
+  ```js
+    export default defineConfig({
+      plugins: [react()],
+      base : "/ReactFactsStaticPage"
+    })
+  ```
+  2. Add homepage to package.json along with predeploy and deploy scripts
+  ```json
+  	"name": "section1",
+	  "private": true,
+	  "version": "0.0.0",
+	  "type": "module",
+	  "homepage": "https://github.com/Mayank926/ReactFactsStaticPage",
+	  "scripts": {
+		  "dev": "vite",
+		  "build": "vite build",
+		  "lint": "eslint .",
+		  "preview": "vite preview",
+		  "predeploy": "npm run build",
+		  "deploy": "gh-pages -d dist"
+	  },
+  ```
+  3. Update Pages setting in Github
+    ![Pages Setting for the repo in Git](./public/images/PagesSettingGit.png)
+
+  4. Push code to git
+  5. Publish gh-pages
+    ```sh
+    npm run deploy
+    ```
