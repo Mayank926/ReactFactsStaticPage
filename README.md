@@ -98,3 +98,8 @@ overflow: hidden;
     </body>
 </>
  ```
+
+- Learned that adding meta viewport is required in header of html for @media query to work
+```html
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
