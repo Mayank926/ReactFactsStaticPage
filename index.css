@@ -1,9 +1,10 @@
 body{
-    background-image: url("public/images/background.jpg");
+    background-image: url("images/background.jpg");
     font-family: 'Inter';
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    background-size: cover;
 }
 #root{
     width:50%;
@@ -14,7 +15,7 @@ body{
     border-radius: 10px;
     background-color: #282D35;
     overflow: hidden;
-    background-image: url("public/images/react-logo-half.png");
+    background-image: url("images/react-logo-half.png");
     background-repeat: no-repeat;
     background-position: right;
     background-size: 100px;
@@ -53,4 +54,40 @@ li::before{
     color: rgb(97, 219, 251);
     font-weight: bold;
     font-size: 25px;
+}
+
+@media (max-width: 500px) {
+    #root{
+        width: 90%;
+    }
+}
+
+@media (min-width: 501px) and  (max-width: 700px) {
+    #root{
+        width: 80%;
+    }
+}
+
+@media (min-width: 701px) and  (max-width: 1000px) {
+    #root{
+        width: 65%;
+    }
+}
+
+@media (min-width: 1001px) and  (max-width: 1500px) {
+    #root{
+        width: 50%;
+    }
+}
+
+@media (min-width: 1501px) and  (max-width: 2000px) {
+    #root{
+        width: 45%;
+    }
+}
+
+@media (min-width: 2001px) {
+    #root{
+        width: 30%;
+    }
 }
