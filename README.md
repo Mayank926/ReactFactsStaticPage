@@ -29,7 +29,7 @@ Create a React app using Vite. Display React Facts by creating components and us
 - Tablet View
 ![Tablet View](./public/images/Tablet.png)
 - Mobile View
-![Mobile View](./images/Mobile.PNG)
+![Mobile View](./public/images/Mobile.PNG)
 
 
 ### Links
