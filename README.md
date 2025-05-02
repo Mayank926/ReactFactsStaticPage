@@ -133,7 +133,11 @@ overflow: hidden;
     ![Pages Setting for the repo in Git](./public/images/PagesSettingGit.png)
 
   4. Push code to git
-  5. Publish gh-pages
+  5. install gh-pages package
+     ```sh
+     npm install gh-pages
+     ```
+  7. Publish gh-pages
     ```sh
     npm run deploy
     ```
